@@ -1,4 +1,4 @@
-# FastAPI + Streamlit App
+# PDF-Table-Extractor
 
 Extract structured tables from PDF files and export them as downloadable CSV files — 
 fully containerized with **FastAPI**, **Streamlit**, and **Docker**.
