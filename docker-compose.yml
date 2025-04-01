@@ -1,0 +1,36 @@
+services:
+  pdf-nginx:
+    build: ./nginx
+    container_name: pdf-nginx
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - pdf-frontend
+      - pdf-backend
+    networks:
+      - pdf-network
+
+  pdf-backend:
+    build: ./backend
+    container_name: pdf-backend
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    networks:
+      - pdf-network
+
+  pdf-frontend:
+    build: ./frontend
+    container_name: pdf-frontend
+    depends_on:
+      - pdf-backend
+    networks:
+      - pdf-network
+    restart: unless-stopped
+
+networks:
+  pdf-network:
+    driver: bridge
