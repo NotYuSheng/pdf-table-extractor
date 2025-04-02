@@ -3,6 +3,10 @@
 Extract structured tables from PDF files and export them as downloadable CSV files — 
 fully containerized with **FastAPI**, **Streamlit**, and **Docker**.
 
+<div align="center">
+  <img src="sample-files/DEMO.png" alt="Demo img" style="width: 75%; max-width: 50px; height: auto;" />
+</div>
+
 ---
 
 ## Prerequisites
