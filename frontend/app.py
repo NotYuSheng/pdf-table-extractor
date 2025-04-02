@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 
+st.set_page_config(page_title="PDF Table Extractor", layout="centered")
 st.title("📄 PDF Table Extractor")
 
 BACKEND_URL = "http://pdf-backend:8000"
