@@ -102,7 +102,7 @@ The project structure is as follows:
 ## Troubleshooting
 
 - Ensure Docker and Docker Compose are installed and running on your system.  
-- Verify that the required port (8000) are not in use by other 
+- Verify that the required port (8080) are not in use by other 
 applications.  
 
 ---
