@@ -82,7 +82,7 @@ jobs:
           template: '@/contrib/sarif.tpl'
           output: 'trivy-nginx-results.sarif'
           severity: 'CRITICAL,HIGH'
-          timeout: 10m
+          timeout: 30m
 
       # Upload Nginx Scan Results
       - name: Upload nginx scan results to GitHub Security tab
