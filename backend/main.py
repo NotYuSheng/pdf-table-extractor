@@ -8,6 +8,7 @@ import os
 import shutil
 import re
 from difflib import SequenceMatcher
+from collections import defaultdict
 
 app = FastAPI()
 
@@ -67,8 +68,6 @@ async def convert_pdf(file: UploadFile = File(...)):
 
 # Serve static image files for frontend access
 app.mount("/images", StaticFiles(directory=IMAGE_OUTPUT_DIR), name="images")
-
-from collections import defaultdict
 
 @app.get("/export-xlsx/")
 def export_xlsx(file: str = Query(...)):

@@ -1,8 +1,8 @@
-fastapi
-uvicorn
-python-multipart
-pdf2image
-pillow
-pdfplumber
-pandas
-xlsxwriter
+fastapi==0.115.12
+uvicorn==0.34.0
+python-multipart==0.0.20
+pdf2image==1.0.0
+pillow==11.1.0
+pdfplumber==0.11.6
+pandas==2.2.3
+xlsxwriter==3.2.2
