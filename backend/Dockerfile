@@ -21,7 +21,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Upgrade setuptools to fix CVE-2024-6345
-RUN pip install --upgrade setuptools>=70.0.0,<71.0.0
+RUN pip install --upgrade setuptools==70.0.0
 
 # Remove unnecessary system packages
 RUN apt-get update && \
